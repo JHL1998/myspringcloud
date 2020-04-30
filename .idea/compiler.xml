@@ -20,9 +20,13 @@
         <module name="eurekaclient" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="nativeconfigserver" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configserver" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="eurekaclient" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
